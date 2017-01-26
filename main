@@ -1,0 +1,11 @@
+#!/bin/vbash
+
+source /opt/vyatta/etc/functions/script-template
+
+# backing up current configuration
+run show configuration commands > $HOME/$(date +%Y%m%d-%H%M%S)_$(hostname).txt
+
+configure
+# config {
+# }
+commit
