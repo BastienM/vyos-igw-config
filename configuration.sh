@@ -20,7 +20,7 @@ DNS_SERVER_STOP="170.42.0.254"
 DNS_SERVER_DOMAIN_NAME="rancher.internal"
 
 # Backing up current configuration
-run show configuration commands > $HOME/$(date +%Y%m%d-%H%M%S)_${HOSTNAME}.conf
+run show configuration commands > $HOME/$(date +%d%m%Y-%H%M)_${HOSTNAME}.conf
 
 configure
 # config {
